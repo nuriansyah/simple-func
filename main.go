@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	readPrint()
+	var inputString1, inputString2 string
+	readPrint(inputString1, inputString2)
 	appendStringAndPrint()
 	printAppendedStringXTimes()
 }
-func readPrint() {
-	var inputString1, inputString2 string
+func readPrint(inputString1, inputString2 string) {
 	fmt.Print("Enter the first string: ")
 	fmt.Scanln(&inputString1)
 	fmt.Print("Enter the second string: ")
